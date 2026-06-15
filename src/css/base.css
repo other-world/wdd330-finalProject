@@ -1,0 +1,415 @@
+/* Style sheet for Jamie Cummings personal page. WDD 131 */
+:root {
+    --primary-color: rgb(7, 69, 176);
+    --secondary-color: white;
+    --accent2-color: #fcb900;
+    --accent1-color: #152750;
+    --font1-color: #152750;
+    --font2-color: white;
+
+    --heading-font: 'Inter', sans-serif;
+    --paragraph-font: 'Gupter', serif;
+    
+    --nav-bg-color: var(--primary-color);
+    --nav-link-color: var(--accent1-color);
+    --nav-visited-color: #0d1c92;
+    --nav-hover-link-color: var(--accent1-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    box-shadow: 6px 5px 5px var(--accent2-color);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+header, body, footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: .25rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1, h2, h3{
+    padding: .5rem;
+    text-align:left;
+    margin-left: 1rem;
+}
+
+h1{
+    font-family: var(--heading-font);
+}
+
+h2{
+    background-color: var(--secondary-color);
+    color: var(--font1-color);
+    font-family: var(--heading-font);
+    text-align: left;
+    border-bottom: 1px solid #152750;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#navMenu.show {
+    /*border-left: 3px solid var(--accent2-color) ;*/
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+
+}
+
+#menu {
+	display: flex;
+    flex-direction: column;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "x";
+}
+
+.navigation {
+    display: block;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+li {
+	display: none;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+a {
+	padding: 1rem;
+    vertical-align: middle;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.25s;
+    color: var(--secondary-color);
+    font-size: large;
+}
+
+.navigation a {
+    display: inline-flex;
+    text-align: left;
+}
+
+.navigation a {
+    width: 100%;
+}
+
+.navigation a:hover, .navigation a:active {
+    width: 100%;
+    border-left: 5px solid var(--accent2-color);
+}
+
+
+.show li {
+	display: block;
+}
+
+.navigation .active {
+    background-color:aliceblue;
+    color: var(--font1-color);
+}
+
+li {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+main {
+    width: 100%;
+}
+
+img {
+    height: auto;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
+    margin: .5rem auto;
+
+}
+
+p { 
+    color: var(--font1-color);
+    font-family: var( --paragraph-font);
+    padding: 0; 
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+#projectInfo {
+    padding-left: 1rem;
+}
+
+footer p {
+    color: var(--font2-color);
+}
+
+footer a {
+    font-size: medium;
+    line-height: .5;
+    padding: .5rem;
+    padding-left: 1rem;
+}
+
+footer a img { 
+    width: 40px;
+}
+
+footer a img:hover {
+    background-color: var(--accent2-color);
+    padding: 5px;
+}
+
+/* -----------Cards-----------*/
+section .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 5px;
+}
+
+.label {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#singlepage {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 0 10px grey;
+}
+
+#content {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background-color: #fff;
+    color:rgb(27, 76, 150);
+    padding: 2rem;
+}
+
+#content section {
+    width: 200px;
+    margin: 20px; 
+}
+#content p {
+    font-size: large;
+    margin: 0 auto;
+}
+#content a, .inlineLink {
+    color: var(--font1-color);
+    font-size: medium;
+    font-weight: lighter;
+    line-height: .05;
+}
+
+.inlineLink {
+    margin:0;
+    padding:0;
+}
+
+.reference {
+    margin-left: 30px;
+    padding: 1rem;
+}
+
+form {
+    margin: 1rem;
+}
+fieldset {
+    border-radius: 3px;
+    margin: 0.5rem;
+    padding: 1rem;
+    min-width: 300px;
+}
+
+legend {
+    padding: 0 .5rem;
+}
+
+label {
+    display: block;
+    padding-top: .5rem;
+    font-weight: lighter;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+}
+
+input[type="submit"]{
+    background-image: linear-gradient(aliceblue, #6992b6);
+    border: none;
+    max-width: 250px;
+    margin: .5rem;
+    padding: .5rem 2rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+button { 
+    padding: 0 .5rem;
+    margin-top: .5rem;
+}
+
+/******* Weather and Movie specific ********/
+.weathercard, .movieDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 242, 242);
+    border: 1px solid rgb(2, 62, 183);
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
+    margin: 3px;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+}
+.movieDiv {
+    width: 200px;
+    height: 200px;
+}
+
+.weathercard h3, .movieDiv h3 {
+    font-family: var(--heading-font);
+}
+
+#weatherPage, #videoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+#locationLimiter {
+    display: flex;
+    max-width: 970px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#locationLimiter span {
+    font-size: large;
+}
+#locationLimiter p {
+    font-size: larger;
+}
+
+#locationLimiter input[type="radio"] {
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+#filterDiv {
+    margin: 1rem 2.5rem;
+}
+
+/******* Signup Form Specific ********/
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 970px;
+}
+
+#positionLimiter, #teamPositions {
+    display: flex;
+    flex-direction: column;
+}
+
+#positionLimiter label, #teamPositions label {
+    font-size: larger;
+    display: flex;
+}
+
+#positionLimiter input[type="radio"],
+#teamPositions input[type="radio"] {
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+#availablePositions .hidden {
+    display: none;
+}
+
+.modal {
+    padding: 1rem;
+    max-width: 350px;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    background-color: rgb(246, 236, 190);
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 5px;
+  }
+
+.modal h2 {
+    border: none;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    font-size: x-large;
+    box-shadow: .25rem .25rem .75rem rgb(0 0 0 / 0.3);
+}
+  
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.5);
+}
+

@@ -1,6 +1,6 @@
 const certifications = [
     {
-      id: "0001";
+      id: "0001",
       Medical: "WFA",
       MedExpiration: "",
       HamRadio: "Amateur Extra",

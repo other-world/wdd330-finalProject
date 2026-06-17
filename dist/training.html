@@ -51,9 +51,20 @@
     <main>
         <aside id="navMenu"></aside>
         <div>
-            <h2>Current user information</h2>
-            <div id="singlepage">
-                <!-- Generated with Javascript -->
+            <h2>Training Videos</h2>
+            <div id="tertVideos">
+                <form id="filterDiv" method="get" action="training.html">
+                    <select name="tagDropDown" id="tagDropdown">
+                        <option id="all" value="All">All</option>
+                        <!-- Populated by Javascript -->
+                    </select>
+                    <input type="submit" name="filter" value="Filter results">
+                </form>
+                <div id="videoGrid">
+
+                </div>
+
+
             </div>
         </div>
 

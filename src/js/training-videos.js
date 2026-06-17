@@ -1,4 +1,4 @@
-const locationFile = "./data/training.json";
+const locationFile = "/json/training.json";
 const tertVideos = document.querySelector('#tertVideos');
 const selectTag = document.querySelector('#tagDropdown');
 const videoGrid = document.querySelector('#videoGrid');

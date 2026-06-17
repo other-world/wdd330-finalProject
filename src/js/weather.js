@@ -1,4 +1,4 @@
-const locationFile = "./data/mountainLocations.json";
+const locationFile = "/json/mountainLocations.json";
 const currentTemp = document.querySelector('#weatherPage');
 
 openWeatherLocations("All");

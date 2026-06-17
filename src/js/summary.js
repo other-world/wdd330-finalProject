@@ -1,5 +1,5 @@
 const currentURL = window.location.href;
-const memberFile = "./data/members.json";
+const memberFile = "/json/members.json";
 const roster = document.querySelector("#singlepage");
 
 currentMemberID = "0007"; //pretend that Jamie logged in, work off her data.

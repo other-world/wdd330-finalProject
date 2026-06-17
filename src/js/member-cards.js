@@ -1,5 +1,5 @@
-const memberFile = "./data/members.json";
-const roster = document.querySelector("#content");
+const memberFile = "/json/members.json";
+const roster = document.querySelector("#memberContent");
 
 getMemberData();
 
@@ -43,7 +43,7 @@ function createMemberCard(filteredMembers) {
         /*applicationLink.innerHTML = `<span class="label">Application Link:</span> ${member.applicationLink}`;*/
 
         if (member.photo == ""){
-          photo.setAttribute("src", "images/blankProfile.webp");
+          photo.setAttribute("src", "/images/blankProfile.webp");
           photo.setAttribute("alt", `${member.fname} ${member.lname} photo`);
         }
         else{

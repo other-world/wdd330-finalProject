@@ -1,3 +1,19 @@
+// retrieve data from localstorage
+export function getLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+// save data to local storage
+export function setLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+export function renderWithTemplate(template, parentElement, data, callback) {
+  parentElement.innerHTML += template;
+  if (callback) {
+    callback(data);
+  }
+}
+
 export async function loadTemplate(path) {
   const response = await fetch(path);
   const template = await response.text();
@@ -14,6 +30,17 @@ export async function loadHeaderFooterMenu(){
   renderWithTemplate(footerTemplate, footerElement);
 
   const menuTemplate = await loadTemplate("../partials/menu.html");
-  const menuElement = document.querySelector("#tert-menu");
-  renderWithTemplate(footerTemplate, footerElement);
+  const menuElement = document.querySelector("#navMenu");
+  renderWithTemplate(menuTemplate, menuElement);
+}
+
+export function getDates() {
+    const yr = new Date().getFullYear();
+    const lastModified = new Date(document.lastModified);
+    const author = "Jamie Cummings";
+    const place = "Utah, USA";
+
+    // \u00A9 is the unicode for the copywrite symbol
+    document.querySelector("#copywrite").innerHTML = `\u00A9 ${yr} | ${author}`;
+    document.querySelector("#modified").innerHTML = `Last Modified ${lastModified.toDateString()}`;
 }

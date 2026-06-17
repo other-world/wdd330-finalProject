@@ -1,11 +1,20 @@
-import { loadHeaderFooterMenu } from "./utils.js";
+import { loadHeaderFooterMenu, getDates } from "./utils.js";
+import { menu } from "./menu.js";
+
+
 //import './style.css'
 //import javascriptLogo from './assets/javascript.svg'
 //import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'
 //import { setupCounter } from './counter.js'
 
-loadHeaderFooterMenu();
+async function init() {
+  await loadHeaderFooterMenu();
+  getDates();
+  menu();
+}
+
+init();
 /*
 document.querySelector('#app').innerHTML = `
 <section id="center">

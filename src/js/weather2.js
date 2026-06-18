@@ -24,12 +24,12 @@ async function init(){
     let locationsArray = locations.timpLocations;
     console.log(locationsArray);
 
-    locationsArray.forEach(element => {
+    for (const element of locationsArray) {
         const forecast = await getForecast(element);
         console.log(forecast);
         //cardHTML = buildSimpleCard(forecast, locationsArray);
         //console.log(cardHTML);
-    });
+    };
 }
 
 /* Add listeners for the radio buttons

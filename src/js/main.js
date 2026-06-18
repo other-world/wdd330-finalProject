@@ -1,8 +1,9 @@
 import { loadHeaderFooterMenu, getDates } from "./utils.js";
 import { menu } from "./menu.js";
 
+import "../css/base.css";
+import "../css/base-large.css";
 
-//import './style.css'
 //import javascriptLogo from './assets/javascript.svg'
 //import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'

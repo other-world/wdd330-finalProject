@@ -136,8 +136,8 @@ a {
 }
 
 .navigation .active {
-    background-color:aliceblue;
-    color: var(--font1-color);
+    /*background-color:aliceblue;*/
+    /*color: var(--font1-color);*/
 }
 
 li {

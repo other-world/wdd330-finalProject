@@ -61,9 +61,10 @@ async function getForecast(apiURL, location) {
     const response = await fetch(apiURL);
     if (response.ok) {
         const weatherData = await response.json();
-        condensedLocation = location.replace(/\s/g, "");
+        console.log(weatherData);
+        const condensedLocation = location.replace(/\s/g, "");
 
-        //Build a weather Card
+        //Build Weather Cards
         const newCard = document.createElement("section");
         newCard.setAttribute("class", "weathercard");
         newCard.setAttribute("id", `${condensedLocation}Weather`);
@@ -71,7 +72,7 @@ async function getForecast(apiURL, location) {
             thisLocation.innerHTML = `${location}`;
             newCard.appendChild(thisLocation); 
 
-            chill = calulateWindChill(weatherData.properties.periods[0].temperature, weatherData.properties.periods[0].windSpeed);
+            const chill = calculateWindChill(weatherData.properties.periods[0].temperature, weatherData.properties.periods[0].windSpeed);
 
 
             const icon = document.createElement("img");
@@ -113,7 +114,7 @@ async function getForecast(apiURL, location) {
     }
 }
 
-function calulateWindChill(temperature, windspeed){
+function calculateWindChill(temperature, windspeed){
     const temp = Number(temperature);
     const windArray = (windspeed.split(" ")); 
     const chill = Math.round(35.74 + (0.6215 * temp) - (35.75 * (Number(windArray[0])**0.16)) + (0.4275 * temp * (Number(windArray[0])**0.16)));

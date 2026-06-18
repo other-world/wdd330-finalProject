@@ -21,17 +21,24 @@ export async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooterMenu(){
-  const headerTemplate = await loadTemplate("../partials/header.html");
+  const headerTemplate = await loadTemplate("/partials/header.html");
   const headerElement = document.querySelector("#tert-header");
   renderWithTemplate(headerTemplate, headerElement);
   
-  const footerTemplate = await loadTemplate("../partials/footer.html");
+  const footerTemplate = await loadTemplate("/partials/footer.html");
   const footerElement = document.querySelector("#tert-footer");
   renderWithTemplate(footerTemplate, footerElement);
 
-  const menuTemplate = await loadTemplate("../partials/menu.html");
+  const menuTemplate = await loadTemplate("/partials/menu.html");
   const menuElement = document.querySelector("#navMenu");
   renderWithTemplate(menuTemplate, menuElement);
+
+  const activeInsert = document.querySelectorAll('.navigation a');
+  activeInsert.forEach(link => {
+    if (window.location.pathname.includes(link.getAttribute('href'))){
+      link.classList.add("active");
+    }
+  })
 }
 
 export function getDates() {
@@ -44,3 +51,4 @@ export function getDates() {
     document.querySelector("#copywrite").innerHTML = `\u00A9 ${yr} | ${author}`;
     document.querySelector("#modified").innerHTML = `Last Modified ${lastModified.toDateString()}`;
 }
+

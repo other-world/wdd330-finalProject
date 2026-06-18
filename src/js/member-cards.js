@@ -1,5 +1,5 @@
 const memberFile = "/json/members.json";
-const roster = document.querySelector("#memberContent");
+const roster = document.querySelector("#content");
 
 getMemberData();
 

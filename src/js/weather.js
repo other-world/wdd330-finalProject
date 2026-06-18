@@ -61,7 +61,7 @@ async function getForecast(apiURL, location) {
     const response = await fetch(apiURL);
     if (response.ok) {
         const weatherData = await response.json();
-        console.log(weatherData);
+        //console.log(weatherData);
         const condensedLocation = location.replace(/\s/g, "");
 
         //Build Weather Cards

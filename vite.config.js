@@ -12,6 +12,7 @@ export default defineConfig({
         certifications: resolve(__dirname, "src/certifications.html"),
         members: resolve(__dirname, "src/members.html"),
         qualified: resolve(__dirname, "src/qualified.html"),
+        signup: resolve(__dirname, "src/signup.html"),
         signupresults: resolve(__dirname, "src/signup-results.html"),
         training: resolve(__dirname, "src/training.html"),
         updateContactInfo: resolve(__dirname, "src/updateContactInfo.html"),

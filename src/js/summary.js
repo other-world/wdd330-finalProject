@@ -2,7 +2,7 @@ const currentURL = window.location.href;
 const memberFile = "/json/members.json";
 const roster = document.querySelector("#singlepage");
 
-currentMemberID = "0007"; //pretend that Jamie logged in, work off her data.
+let currentMemberID = "0007"; //pretend that Jamie logged in, work off her data.
 
 const everything = currentURL.split('?');
 getMemberData();
@@ -49,7 +49,7 @@ function getMemberSummary(currentMember){
     });
     
     const welcomeMessage = document.createElement("h3");
-    if (missingInfo = 0){
+    if (missingInfo == 0){
         welcomeMessage.textContent = `Hi ${currentMember.fname}. Welcome to your interface.`;
     }
     else if (missingInfo < 2){

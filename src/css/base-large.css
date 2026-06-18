@@ -41,8 +41,7 @@
     #singlepage {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 600px;
-    
+        max-width: 100%;
     }
     #singlepage h3 {
         grid-column: 1/-1;

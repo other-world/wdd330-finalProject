@@ -108,7 +108,7 @@ function getMemberSummary(currentMember){
     let profilePic = document.createElement("img");
     profilePic.setAttribute('class', 'profilePic');
     if (currentMember.photo == "") {
-        profilePic.setAttribute('src', "./images/blankProfile.webp");
+        profilePic.setAttribute('src', "/images/blankProfile.webp");
     }
     else {
         profilePic.setAttribute('src', currentMember.photo);

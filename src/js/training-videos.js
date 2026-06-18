@@ -80,7 +80,7 @@ function videoCardBuilder(videoArray) {
         movieDiv.setAttribute("class", "movieDiv");
         const thumbnail = document.createElement("img");
         if (element.thumbnail == "") {
-            thumbnail.setAttribute("src", "images/movieIcon.png");
+            thumbnail.setAttribute("src", "/images/movieIcon.png");
             thumbnail.setAttribute("width", "50");
             thumbnail.setAttribute("height", "50");
         }

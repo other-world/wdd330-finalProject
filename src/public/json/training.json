@@ -2,7 +2,7 @@
     "trainingvideos": [
         {
             "title": "WDD 231 Project Tour",
-            "path": "videos/wdd231ProjectTour.mp4",
+            "path": "/videos/wdd231ProjectTour.mp4",
             "thumbnail": "images/wdd231projectThumbnail.webp",
             "tags": [
                 "wdd231",
@@ -11,7 +11,7 @@
         },
         {
             "title": "Water Filter System at High Camp",
-            "path": "videos/WaterFilterSystemAtHighCamp.mp4",
+            "path": "/videos/WaterFilterSystemAtHighCamp.mp4",
             "thumbnail": "",
             "tags": [
                 "water filter",
@@ -20,7 +20,7 @@
         },
         {
             "title": "Packing Up the Cache at the End of the Weekend",
-            "path": "videos/PackingUpTheCacheAtTheEndOfTheWeekend.mp4",
+            "path": "/videos/PackingUpTheCacheAtTheEndOfTheWeekend.mp4",
             "thumbnail": "",
             "tags": [
                 "cache",
@@ -29,7 +29,7 @@
         },
         {
             "title": "Forest Service Cache",
-            "path": "videos/ForestServiceCache.mp4",
+            "path": "/videos/ForestServiceCache.mp4",
             "thumbnail": "",
             "tags": [
                 "cache",
@@ -38,7 +38,7 @@
         },
         {
             "title": "Power and Radio Attachments to the Cache",
-            "path": "videos/PowerAndRadioAttachmentsToTheCache.mp4",
+            "path": "/videos/PowerAndRadioAttachmentsToTheCache.mp4",
             "thumbnail": "",
             "tags": [
                 "cache",
@@ -49,7 +49,7 @@
         },
         {
             "title": "Gravity Water Filter at Emerald Lake",
-            "path": "videos/GravityWaterFilterAtEmeraldLake.mp4",
+            "path": "/videos/GravityWaterFilterAtEmeraldLake.mp4",
             "thumbnail": "",
             "tags": [
                 "water filter",
@@ -58,7 +58,7 @@
         },
         {
             "title": "Coleman Stove Operation",
-            "path": "videos/ColemanStoveOperation.mp4",
+            "path": "/videos/ColemanStoveOperation.mp4",
             "thumbnail": "",
             "tags": [
                 "cooking",
@@ -68,7 +68,7 @@
         },
         {
             "title": "Finding High Camp updated audio",
-            "path": "videos/FindingHighCampUpdatedAudio.mp4",
+            "path": "/videos/FindingHighCampUpdatedAudio.mp4",
             "thumbnail": "",
             "tags": [
                 "high camp"
@@ -76,7 +76,7 @@
         },
         {
             "title": "AG Trailhead Part 1",
-            "path": "videos/AGTrailheadPart1.mp4",
+            "path": "/videos/AGTrailheadPart1.mp4",
             "thumbnail": "",
             "tags": [
                 "aspen grove",
@@ -85,7 +85,7 @@
         },
         {
             "title": "AG Trailhead Part 2",
-            "path": "videos/AGTrailheadPart2.mp4",
+            "path": "/videos/AGTrailheadPart2.mp4",
             "thumbnail": "",
             "tags": [
                 "aspen grove",
@@ -94,7 +94,7 @@
         },
         {
             "title": "AG Trailhead Part 3",
-            "path": "videos/AGTrailheadPart3.mp4",
+            "path": "/videos/AGTrailheadPart3.mp4",
             "thumbnail": "",
             "tags": [
                 "aspen grove",
@@ -103,7 +103,7 @@
         },
         {
             "title": "AG Trailhead Part 4",
-            "path": "videos/AGTrailheadPart4.mp4",
+            "path": "/videos/AGTrailheadPart4.mp4",
             "thumbnail": "",
             "tags": [
                 "aspen grove",
@@ -112,7 +112,7 @@
         },
         {
             "title": "AG Trailhead Part 5",
-            "path": "videos/AGTrailheadPart5.mp4",
+            "path": "/videos/AGTrailheadPart5.mp4",
             "thumbnail": "",
             "tags": [
                 "aspen grove",
@@ -121,7 +121,7 @@
         },
         {
             "title": "AG Trailhead Part 6",
-            "path": "videos/AGTrailheadPart6.mp4",
+            "path": "/videos/AGTrailheadPart6.mp4",
             "thumbnail": "",
             "tags": [
                 "aspen grove",
@@ -130,7 +130,7 @@
         },
         {
             "title": "AG Trailhead Part 7",
-            "path": "videos/AGTrailheadPart7.mp4",
+            "path": "/videos/AGTrailheadPart7.mp4",
             "thumbnail": "",
             "tags": [
                 "aspen grove",
@@ -139,7 +139,7 @@
         },
         {
             "title": "Stewart Falls",
-            "path": "videos/StewartFalls.mp4",
+            "path": "/videos/StewartFalls.mp4",
             "thumbnail": "",
             "tags": [
                 "medical",

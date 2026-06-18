@@ -87,7 +87,7 @@
       "email": "",
       "DOB": "02/07/1776",
       "applicationLink": "",
-      "photo": "images/profileJamie.webp",
+      "photo": "/images/profileJamie.webp",
       "status": "active",
       "teamLeader": true
     },
